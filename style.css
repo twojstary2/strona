@@ -1,0 +1,59 @@
+/* Główny kolor tła całej strony */
+.body{
+    background: #F1F1F1;
+}
+
+/* Informujemy że w naszym body, elementy takie jak div, ul i ol mają się nie poszerzać od paddingów */
+body div, ul, ol{
+    box-sizing: border-box;
+}
+
+/* Ustawiamy szerokość na 100% ekranu + marginesy wewnętrzne (48px góra dół, 64 boki),
+wyśrodkowanie tekstów, kolor tła i margines dolny poza tym elementem */
+.hero{
+    width: 100%;
+    padding: 48px 64px;
+    background: #e0e0e0;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Najwazniejsza rzecz, czyli tworzymy taki kontener którego zadaniem jest 
+ułożenie jego podrzędnych elementów obok siebie z przerwą między nimi.body
+Szerokość na pełny ekran, marginesy wewnętrzne równe z każdej strony po 48px
+przerwa między elementami wewnątrz wynosząca 48px i upozycjonowanie elementów
+z przerwą po środku (space betwwen) */
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #e7e7e7;
+    padding: 48px;
+    gap: 48px;
+    justify-content: space-between;
+}
+
+/* Elementy wewnątrz poprzedniego kontenera, które mają mieć po 100%
+szerokości (ale z racji, że musza być koło siebie, bo to wymusza
+element nadrzędny to 100% szerokości zamieni się tak naprawdę w dostepne 50%),
+ustawienie sztywnej wysokości w postaci 250px i marginesów wewnętrznych */
+.listbox{
+    background-color: aquamarine;
+    width: 100%;
+    height: 250px;
+    padding: 24px;
+}
+
+footer{
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    cursor: default;
+}
+
+footer a:hover{
+    cursor: default;
+}
