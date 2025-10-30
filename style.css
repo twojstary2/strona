@@ -1,0 +1,9 @@
+#container{
+    background: #d11010
+}
+
+.container p {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
